@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: $beVietnam;
+  font-weight: 400;
+  background-image: url(../images/bg-tablet-pattern.svg),
+    url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75%, 98%;
+  background-position-y: 17%, -2.5%;
+  background-position-x: 255%, 1150%;
+  animation: load 300ms ease-in-out 1000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: $brightRed;
+  font-family: inherit;
+  font-weight: 700;
+  color: $veryPaleRed;
+  box-shadow: 0px 10px 5px $veryPaleRed;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

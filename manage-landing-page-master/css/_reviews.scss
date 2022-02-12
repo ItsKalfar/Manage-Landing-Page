@@ -1,0 +1,76 @@
+.reviews {
+  .container {
+    padding: 2rem 0rem;
+    text-align: center;
+    .reviews_heading {
+      color: $darkBlue;
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .card_wrapper {
+      padding: 0;
+      overflow-x: hidden;
+      width: 340px;
+      margin: 0 auto;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 340px;
+      height: 100%;
+      margin: 4rem auto 0.5rem auto;
+      transition: all 0.5s ease-in-out;
+
+      display: flex;
+      align-items: center;
+      padding: 0;
+
+      .slide {
+        background-color: $veryLightGray;
+        min-width: 340px;
+        height: 250px;
+        text-align: center;
+        z-index: 0;
+
+        .profile_pic {
+          width: 5rem;
+          margin-top: -10%;
+        }
+
+        .name {
+          padding: 0.75rem;
+          color: $darkBlue;
+          font-size: 1.2rem;
+          font-weight: 900;
+        }
+
+        .slider_text {
+          padding: 0rem 1rem 2.5rem 1rem;
+          color: $darkGrayishBlue;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .slider_dots {
+      margin-bottom: 2.5rem;
+      .dot {
+        border: 1.75px solid $brightRed;
+        background-color: #ffffff;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .dot.active {
+        background-color: $brightRed;
+      }
+    }
+  }
+}
